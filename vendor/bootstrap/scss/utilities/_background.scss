@@ -1,0 +1,11 @@
+// stylelint-disable declaration-no-important
+
+$white: #fff;
+.bg-white {
+  background-color: $white !important;
+}
+
+.bg-transparent {
+  background-color: transparent !important;
+}
+

@@ -1,0 +1,71 @@
+// Global styles for both custom sidebar and topbar compoments
+
+.sidebar,
+.topbar {
+  .nav-item {
+    // Customize Dropdown Arrows for Navbar
+    &.dropdown {
+      .dropdown-toggle {
+        &::after {
+          width: 1rem;
+          text-align: center;
+          float: right;
+          vertical-align: 0;
+          border: 0;
+          font-weight: 900;
+          content: '\f105';
+          font-family: 'Font Awesome 5 Free';
+        }
+      }
+      &.show {
+        .dropdown-toggle::after {
+          content: '\f107';
+        }
+      }
+    }
+    // Counter for nav links and nav link image sizing
+    .nav-link {
+      position: relative;
+      .badge-counter {
+        position: absolute;
+        transform: scale(0.7);
+        transform-origin: top right;
+        right: .25rem;
+        margin-top: -.25rem;
+      }
+      .img-profile {
+        height: 2rem;
+        width: 2rem;
+      }
+    }
+  }
+}
+
+.text-bold-800{
+  font-weight: 700;
+  color: #1D222E;
+}
+
+.nav-top{
+  .nav-link{
+      padding-left: 0;
+      padding-right: 0;
+      margin-right: 14px;
+      font-size: 0.9rem;
+      color:#6e707e;
+      &.active{
+        border-bottom: 2px solid;
+        color: #315E8A;
+        font-weight: bold;
+      }
+  }
+}
+
+.color-yellow{
+  color:#F1C518; 
+}
+
+.bg-yellow{
+  background-color: #F1C518 !important;
+}
+

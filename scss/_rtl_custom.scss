@@ -1,0 +1,85 @@
+
+body{
+    font-family: 'Cairo', sans-serif;
+}
+
+@media (min-width: 768px){
+    .sidebar.toggled .nav-item .collapse {
+        right: calc(6.5rem + 1.5rem / 2);
+        left:auto;
+    }
+
+}
+
+
+.sidebar #sidebarToggle{
+    transform: rotate(180deg);
+}
+
+.accordion-button::after{
+    margin-right: auto;
+    margin-left: 0;
+    color: #1D222E;
+}
+
+.sidebar .nav-item .nav-link[data-bs-toggle=collapse]::after{
+    float:left;
+    transform: rotate(180deg);
+  
+}
+@media(min-width:768px){
+    .bg-sidebar-primary .nav-item .nav-link{
+        text-align: right;
+    }
+}
+
+input[type='checkbox'] + label, input[type='radio'] + label{
+    margin-right:4px;
+}
+
+.scroll-to-top{
+    right:auto;
+    left:1rem;
+}
+
+.files-list .btn-light{
+    left:-1px;
+    right:auto;
+}
+
+.files-list .form-control{
+    padding-left:60px;
+    padding-right:0.8rem;
+}
+
+.form-control-user + .select2-container--default .select2-selection--single .select2-selection__arrow{
+    right:auto;
+    left:10px;
+}
+
+.ml-auto{
+    margin-right: auto !important;
+    margin-left:0 !important;
+}
+
+.btn-back{
+    i{
+        transform: rotate(180deg);
+    }
+}
+
+.form-control-user + .select2-container--default .select2-selection--single .select2-selection__arrow:before{
+    font-size: 2.5rem;
+    content: '\203A';
+    line-height: 0.5;
+}
+
+.form-control-user + .select2-container--open .select2-selection--single .select2-selection__arrow:before{
+    line-height: 1;
+}
+
+.toggle-password{
+    
+    left: 10px;
+    right: auto;
+  }

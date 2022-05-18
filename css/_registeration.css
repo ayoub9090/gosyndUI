@@ -1,0 +1,9 @@
+.bg-dark-bottom-mask {
+  background-color: #1D222E;
+  background-image: url(../img/mask-bottom.svg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 0 100%; }
+
+.bg-transparent {
+  background-color: transparent; }
