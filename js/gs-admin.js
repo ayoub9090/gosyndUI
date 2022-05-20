@@ -113,3 +113,12 @@ $(".toggle-password").click(function() {
     input.attr("type", "password");
   }
 });
+
+function toggleContactUs(){
+  //$('.first-toggled-animation').toggleClass('hide');
+  $('.toggledAnimate').toggleClass('show');
+}
+
+function goNext(step){
+
+}

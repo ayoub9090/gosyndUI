@@ -3,7 +3,7 @@
    <div class="container-fluid px-0">
     <div class="row mx-0">
 
-        <div class="col-sm-12 bg-dark-bottom-mask h-100 d-flex flex-column justify-content-center relative">
+        <div class="col-sm-12 h-100-sm-overflow bg-dark-bottom-mask h-100 d-flex flex-column justify-content-center relative">
 
           
                            
@@ -20,30 +20,34 @@
                                 </div>
 
                                 <div class="row justify-content-center align-self-center w-100">
-                                <div class="col-lg-6 col-sm-7 ">
-                                    <div class="p-3 p-sm-5 ">
-                                        <form class="user">
-                                        <div class="text-center">
-                                            <h1 class="h2 text-white mb-4">Check Your Company Sector</h1>
-                                            <label class="text-center text-white w-100 mb-3">Some details about this field</label>
-                                        </div>
-                                       
+                                <div class="col-lg-6 col-sm-7 relative">
+                                    
+                                    <div class="p-3 p-sm-5 relative" >
+                                     
+                                    <div class="toggledAnimate">
+                                        <div class="row justify-content-center">
+                                            
+                                            <div class="col-sm-10 col-lg-7 relative">
 
-                                            <div class="form-group row">
-                                                <div class="col-12 mb-3 mb-sm-0">
-                                             
+                                        <form class="user ">
+                                            <div class="col-12 text-center">
+                                                <h1 class="h2 text-white mb-4">Check Your Company Sector</h1>
+                                                <label class="text-center text-white w-100 mb-3">Some details about this field</label>
+                                            </div>
+
+                                            <div class="form-group mb-3 ">
                                                         <select class="form-select form-control-user select2" placeholder="Find your sector">
                                                             <option>Find your sector</option>
                                                             <option>sector</option>
                                                             <option>sector</option>
                                                             <option>sector</option>
                                                         </select>
-                                                </div>
+                                               
                                             
                                             </div>
 
-                                            <div class="form-group row">
-                                                <div class="col-12 mb-3 mb-sm-0">
+                                            <div class="form-group mb-3 ">
+                                           
                                              
                                                         <select class="form-select form-control-user select2-optgroup" placeholder="Industry 50">
                                                             
@@ -58,21 +62,21 @@
                                                                 <option value="6">Option 6</option>
                                                             </optgroup>
                                                         </select>
-                                                </div>
+                                             
                                             
                                             </div>
-                                            <div class="form-group row">
-                                                <div class="col-12 mb-3 mb-sm-0 mt-3">
+                                            <div class="form-group ">
+                                                <div class="col-12 mb-3  mt-3">
                                                      <button class="btn w-100 btn-primary-yellow" type="button" onclick="showSuccess()">Check Industry</button>
                                                  </div>
                                             </div>
-                                            <div class="form-group row">
-                                                <div class="col-12 mb-3 mb-sm-0 text-center">
-                                                    <label class="text-white">Didn't find your sector? <a class="link-def  text-white" href="./contactus.html">Contact US </a></label>
+                                            <div class="form-group ">
+                                                <div class="col-12 mb-3 text-center">
+                                                    <label class="text-white">Didn't find your sector? <a class="link-def  text-white" href="javascript:toggleContactUs()">Contact US </a></label>
                                                  </div>
                                             </div>
-                                            <div class="row my-4">
-                                                <div class="col-12 text-center">
+                                            <div class=" my-4">
+                                                <div class=" text-center">
                                                     <img  src="./img/yellow-check.gif" style="display:none" class="success-gif" />
                                                     <img  src="./img/close_animate.gif" style="display:none" class="success-gif" />
                                                 </div>
@@ -80,10 +84,52 @@
                                         
                                         
                                         </form>
-                                
+                                        <form class="contact-us" >
+                                            <div class=" col-12  mt-3 relative contact-us--title">
+                                                <h3 class="h3 text-white text-center">CONTACT US</h3>
+                                               <button type="button" class="btn btn-primary-yellow btn-back btn-back--sticky" onclick="toggleContactUs()" ><i class="fas fa-angle-left"></i></button>
+                                            </div>                                       
+                                            <div class="form-group mb-3">
+                                                <input type="text" placeholder="FIRST NAME" class="form-control  form-control-user">
+                                            </div>
+                                            <div class="form-group mb-3">
+                                                <input type="text" placeholder="LAST NAME" class="form-control  form-control-user">
+                                            </div>
+                                            <div class="form-group mb-3">
+                                                <input type="text" placeholder="EMAIL" class="form-control  form-control-user">
+                                            </div>
+                                            <div class="form-group mb-3">
+                                                <input type="text" placeholder="COMPANY" class="form-control  form-control-user">
+                                            </div>
+                                            <div class="form-group mb-3">
+                                                        <select class="form-select form-control-user select2" placeholder="Find your sector">
+                                                            <option>Find your sector</option>
+                                                            <option>sector</option>
+                                                            <option>sector</option>
+                                                            <option>sector</option>
+                                                        </select>
+                                            </div>
+                                            <div class="form-group mb-3">
+                                                    <textarea class="form-control  form-control-user" placeholder="DESCRIPTION"></textarea>
+                                            </div>
 
+                                            <div class="form-group mb-3 mt-3">
+                                                <button class="btn w-100 btn-primary-yellow">SEND</button>
+                                            </div>
+                                        
+                                    
+
+
+                                        </form>
 
                                     </div>
+                                    </div>
+                                    </div>
+
+                                    
+
+                                    </div>
+
                                 </div>
                 </div>
                 

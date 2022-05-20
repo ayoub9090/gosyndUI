@@ -79,27 +79,27 @@
                                 <div class="col-lg-12 register-step--step3">
                                     <div class="p-3 p-sm-3 mt-5">
               
-                                        <h3 class="h6 font-bold text-center mb-2 step-number text-yellow">
+                                        <h3 class="h6 font-bold text-center mb-2 step-number step1 text-yellow">
                                            Step 01 
                                         </h3>
-                                        <h4 class="h6 step-title text-yellow text-center font-bold">General Information</h4>
+                                        <h4 class="h6 step-title text-yellow text-center step1 font-bold">General Information</h4>
                                         
-                                        <h3 class="h6 font-bold text-center mb-2 step-number text-yellow">
+                                        <h3 class="h6 font-bold text-center mb-2 step-number step2  text-yellow">
                                             Step 02
                                          </h3>
                                          
-                                         <h4 class="h6 step-title text-yellow text-center font-bold">Company Documentation</h4>
-                                         <h3 class="h6 font-bold text-center mb-2 step-number text-yellow">
+                                         <h4 class="h6 step-title text-yellow text-center step2 font-bold">Company Documentation</h4>
+                                         <h3 class="h6 font-bold text-center mb-2 step-number step3 text-yellow">
                                             Step 03
                                          </h3>
-                                         <h4 class="h6 step-title text-yellow text-center font-bold">Choose Plan</h4>
+                                         <h4 class="h6 step-title text-yellow text-center step3 font-bold">Choose Plan</h4>
 
                                          <h3 class="h6 font-bold text-center mb-2 step-number text-yellow">
                                             Step 04
                                          </h3>
-                                         <h4 class="h6 step-title text-yellow text-center font-bold">Payment Information</h4>
+                                         <h4 class="h6 step-title text-yellow text-center step4 font-bold">Payment Information</h4>
 
-                                        <label class="text-white step-percentage text-center w-100">100 %</label>
+                                        <label class="text-white step-percentage step4 text-center w-100">100 %</label>
                                         <p class="text-white step-info text-center">
                                             Now your account is ready you can login :)
                                         </p>
@@ -121,7 +121,7 @@
                                     <div class="row align-items-start h-100 h-100-sm-overflow justify-content-center p-3">
                                         <div class="col-sm-10 col-lg-10">
                                         <!--register step-0 form-->
-                                        <form class="register-form register-form--step0" style="display:none" >
+                                        <form class="register-form register-form--step0"  >
                                             <div class="form-group row">
                                                 <div class=" col-12 mb-3 mb-sm-0 mt-3 relative">
                                                     <h3 class="h1 text-primary">Create New Acc<i class="circle-yellow"></i>unt</h3>
@@ -196,11 +196,24 @@
                                                 </div>
                                               </div>
 
+                                              <div class="col-sm-6">
+                                                <div class="form-check mt-3">
+                                                    <input type="checkbox" class="form-check-input" id="check1" name="check1">
+                                                    <label class="form-check-label" for="check1"> Accept terms & conditions</label>
+                                                  </div>
+                                              </div>
+                                              <div class="col-sm-6">
+                                                <div class="form-check mt-3 float-end">
+                                                    <input type="checkbox" class="form-check-input" id="check1" name="check1">
+                                                    <label class="form-check-label" for="check1"> Accept newsletter to email</label>
+                                                  </div>
+                                              </div>
+
                                             </div>
                                      
                                             <div class="form-group row">
                                                 <div class="col-12 mb-0 mb-sm-0 mt-3">
-                                                    <button class="btn w-100 btn-primary-yellow" onclick="goNext()">NEXT</button>
+                                                    <button class="btn w-100 btn-primary-yellow" onclick="goNext(2)">NEXT</button>
                                                 </div>
                                                 <div class="col-12 mb-3 mb-sm-0 mt-3">
                                                     <button class="btn w-100 btn-outline-secondary rounded-1"><i  class="fab fa-fw fa-linkedin linkden-rounded"></i> Register with Linkden</button>
@@ -214,7 +227,7 @@
 
 
                                         <!--register step-1 form-->
-                                        <form class="register-form  register-form--step1" style="display:none;" >
+                                        <form class="register-form  register-form--step1 fadeIn animated delay-1s" style="display:none;" >
                                        
                                             <div class="form-group row relative">
                                             
@@ -461,7 +474,7 @@
                                             </form>
 
                                              <!--register step-4 form-->
-                                             <form class="register-form  register-form--step4"  >
+                                             <form class="register-form  register-form--step4" style="display:none" >
                                        
                                                 <div class="form-group row relative">
                                                 
