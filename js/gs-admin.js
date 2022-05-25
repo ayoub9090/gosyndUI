@@ -147,3 +147,30 @@ function goNext(s){
   $('.step-percentage').text( (step*25) +'%');
  
 }
+
+
+function showForgetPassword(){
+  $('.h-100-sm-overflow').addClass('no-overflow');
+  setTimeout(function(){$('.h-100-sm-overflow').removeClass('no-overflow');},1200);
+  $('.forget-password').removeClass('hide');
+  $('.login-form').addClass('hide');
+}
+
+
+function showResetPassword(){
+  $('.h-100-sm-overflow').addClass('no-overflow');
+  setTimeout(function(){$('.h-100-sm-overflow').removeClass('no-overflow');},1200);
+  $('.reset-password').removeClass('hide');
+  $('.login-form').addClass('hide');
+  $('.forget-password').addClass('hide');
+}
+
+function showLogin(){
+  $('.h-100-sm-overflow').addClass('no-overflow');
+  setTimeout(function(){$('.h-100-sm-overflow').removeClass('no-overflow');},1200);
+  $('.reset-password').addClass('hide');
+  $('.login-form').removeClass('hide');
+  $('.forget-password').addClass('hide');
+}
+
+
