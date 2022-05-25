@@ -209,6 +209,7 @@
         right: 0;
         top:8rem;
         opacity: 1;
+        transition: opacity 0.8s;
     }
     .contact-us{
         opacity: 0;
@@ -276,14 +277,6 @@
     transition: opacity 1.5s;
    
 }
-
-@keyframes hideme {
-    0% {
-      
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-      
-    }
-  }
+.hide{
+    display: none;
+}

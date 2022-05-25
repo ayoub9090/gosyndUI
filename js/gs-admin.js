@@ -119,6 +119,31 @@ function toggleContactUs(){
   $('.toggledAnimate').toggleClass('show');
 }
 
-function goNext(step){
+function goNext(s){
+  let step = parseInt(s);
 
+    if(step == 1){
+      $('.step' + (step - 1)).toggleClass('hide');
+    } 
+
+    $('.step' + (step)).toggleClass('hide');
+
+    $('.register-form--step'+ (step)).toggleClass('hide');
+    $('.register-form--step'+ (step + 1)).toggleClass('hide');
+
+    $('.step-progress > div').css({'width': (step*25) +'%'});
+    $('.step-progress > div').attr({'aria-valuenow': (step*25) +'%'});
+
+    if(step == 1){
+      $('.step-progress').toggleClass('hide');
+      $('.steps-description').addClass('hide');
+      $('.steps-description--then').removeClass('hide');
+      $('.step-percentage').toggleClass('hide');
+    } else if(step == 4){
+      $('.steps-description').addClass('hide');
+      $('.steps-description--then').removeClass('hide');
+    }
+  
+  $('.step-percentage').text( (step*25) +'%');
+ 
 }
