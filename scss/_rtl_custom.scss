@@ -83,3 +83,11 @@ input[type='checkbox'] + label, input[type='radio'] + label{
     left: 10px;
     right: auto;
   }
+
+  .btn-outline-secondary:hover{
+      color:#6c757d;
+  }
+
+  .form-control-user + .select2-container--default .select2-selection--single .select2-selection__arrow{
+    transform: rotate(180deg);
+  }
