@@ -1,0 +1,758 @@
+   <!DOCTYPE html>
+<html lang="ar">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>GoSynd</title>
+
+    <!-- Custom fonts for this template-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <link href="vendor/select2/select2.min.css" rel="stylesheet" type="text/css">
+
+    <link href="vendor/bootstrap-datepicker/bootstrap-datepicker.min.css" rel="stylesheet" type="text/css">
+
+    <!--Swiper CSS -->
+    <link rel="stylesheet" href="vendor/swiper/swiper-bundle.min.css" />
+  
+    
+      <!--RTL stylesheets -->
+      <link href="https://fonts.googleapis.com/css2?family=Cairo&family=Poppins&display=swap" rel="stylesheet">
+      <link href="css/animate.css" rel="stylesheet">
+      <link href="css/gs-admin-rtl.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+    <!-- Page Wrapper -->
+    <div>
+ 
+      <nav class="navbar navbar-expand-lg main-nav  fixed-top py-4 d-block" data-navbar-on-scroll="data-navbar-on-scroll" >
+    <div class="container">
+        <a class="navbar-brand" href="index.html"><img src="./img/logo-white.svg" height="62" alt="logo"></a>
+       <div class="relative mr-auto">
+        <button class="btn btn-search " type="button" onclick="" data-bs-toggle="dropdown">
+            <i class="fas fa-search fa-sm"></i>
+        </button>
+        <div class="dropdown-menu dropdown-menu-end border-0 shadow-lg dropdown-top-search"  aria-labelledby="navbarDropdown">
+          <input type="text" class="form-control" placeholder="Search.." />
+        </div>
+      </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><svg class="svg-inline--fa fa-bars fa-w-14 " aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" ><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg></button>
+      <div class="collapse navbar-collapse animate__fadeInDown animate__animated animate__fast  mt-4 mt-lg-0" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto pt-2 pt-lg-0 font-base align-items-lg-center align-items-start">
+          <li class="nav-item active"><a class="nav-link fw-medium" aria-current="page" href="#">Home</a></li>
+          <li class="nav-item "><a class="nav-link fw-medium" aria-current="page" href="#">Public Business</a></li>
+          <li class="nav-item "><a class="nav-link fw-medium" aria-current="page" href="#">Tenders</a></li>
+          <li class="nav-item "><a class="nav-link fw-medium" aria-current="page" href="#">Services</a></li>
+          <li class="nav-item "><a class="nav-link fw-medium" aria-current="page" href="#">News & Announcement</a></li>
+          <li class="nav-item "><a class="nav-link fw-medium" aria-current="page" href="#">About Us</a></li>
+          
+          
+
+          <li class="nav-item px-lg-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" href="#!">Login</a></li>
+          <li class="nav-item px-lg-3 px-xl-4"><a class="btn btn-yellow pd-rounded-5 rounded-30 order-1 order-lg-0 fw-medium" href="#!">Register</a></li>
+          <li class="nav-item dropdown px-sm-3 px-lg-0"> <a class="d-inline-block ps-0 py-2 pe-3 text-white text-decoration-none dropdown-toggle fw-medium" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">EN</a>
+            <ul class="dropdown-menu dropdown-menu-end border-0 shadow-lg"  aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#!">EN</a></li>
+              <li><a class="dropdown-item" href="#!">AR</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+    <!--<div class="mask-top"></div>--> 
+
+ <header class="masthead">
+    
+    <div class="container">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-12 col-sm-12 col-lg-8 ">
+                <h1 class="text-center masthead--heading"><span class="align-middle">Global Sourcing on The G</span><i class="circle-yellow large"></i></h1>
+                <div class="row justify-content-center mt-3">
+                    <div class="col-sm-8">
+                        <h6 class="">Here: some details about the search feature, how we can use it and what we will find in this section</h6>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                   <div class="col-sm-8">
+                    <form class="masthead--search relative mt-4 mb-3">
+                        <input type="text" class="form-control masthead--searchInput" onfocus="openAutoComplete()" onfocusout="closeAutoComplete()" placeholder="Search" />
+                        <i class="fas fa-fw fa-times" onclick="closeAutoComplete()"></i>
+                        <button class="btn btn-yellow rounded-30" type="button" >Search</button>
+                        <div class="autocomplete-box " id="">
+                            <ul>
+                                <li class="subheading mb-1 mt-1">Products</li>
+                                <li><a href="#">Service name business profile</a></li>
+                                <li><a href="#">Service name business profile</a></li>
+                                <li class="subheading mb-1 mt-1">Products</li>
+                                <li><a href="#">Service name business profile</a></li>
+                                <li><a href="#">Service name business profile</a></li>
+                                <li class="subheading mb-1 mt-1">Products</li>
+                                <li><a href="#">Service name business profile</a></li>
+                                <li><a href="#">Service name business profile</a></li>
+
+                            </ul>
+                        </div>
+                    </form>
+                    </div>
+                </div>
+
+                <h2 class="text-center masthead--heading mt-5 mb-3">Public Business</h2>
+                <div class="row Company-list justify-content-center text-center">
+                    <div class="col-sm-3 col-4 col-lg-2"><a href="#"><img src="./img/Company-sample.png" /></a></div>
+                    <div class="col-sm-3 col-4 col-lg-2"><a href="#"><img src="./img/Company-sample.png" /></a></div>
+                    <div class="col-sm-3 col-4 col-lg-2"><a href="#"><img src="./img/Company-sample.png" /></a></div>
+                    <div class="col-sm-3 col-4 col-lg-2"><a href="#"><img src="./img/Company-sample.png" /></a></div>
+                    <div class="col-sm-3 col-4 col-lg-2"><a href="#"><img src="./img/Company-sample.png" /></a></div>
+                    <div class="col-sm-3 col-4 col-lg-2"><a href="#"><img src="./img/Company-sample.png" /></a></div>
+                 </div>
+                 <div class="row">
+                     <div class="col-12 mt-4 text-center">
+                         <button class="btn btn-yellow rounded-30">View all</button>
+                     </div>
+                 </div>
+            </div>
+        </div>
+    </div>
+ </header>
+
+
+
+ <!--- 2nd Section -->
+ <section class="page-section relative hide-overflow tender__animate-section">
+    <div class="container-fluid">
+        <div class="row mb-5">
+            <div class="col-12 text-center">
+                <h1 class="heading-xl">
+                    <span class="text-primary">GO</span><span class="arrow-wide mx-1"></span><span class="arrow-wide mx-1"></span><span class="text-primary">SYND</span> 
+                    <label class="text-yellow d-block letter-space-1">TENDERS</label>
+                </h1>
+            </div>
+        </div>
+        <div class="row  align-items-end tenders-animation">
+            <div class="col-lg-8 tenders-animation__right">
+                
+                <div class="swiper tender-row">
+                    <div class="swiper-wrapper">
+                      
+                        <div class="swiper-slide">
+                            <div class="tender-box">
+                                <a href="#" class="tender-box--document"><i class='fas fa-file-pdf'></i></a>
+                                <div class="tender-box--header">
+                                    <img src="./img/Company-sample.png" />
+                                </div>
+                                
+                                <h4 class="tender-box--busName text-primary font-bold mt-2">Business Name</h4>
+                                <h5 class="tender-box--title text-lightBlue mb-3">Tender Title</h5>
+            
+                                <p class="tender-box--desc mb-3 text-primary">
+                                    Lorem ipsum dolor sit amet, consete tur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+                                </p>
+            
+                                <div class="tender-box--footer ml-auto mt-3 mb-2">
+                                    <a href="#"><span class="arrow-wide arrow-wide--small"></span><span class="arrow-wide arrow-wide--small"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide">
+                            <div class="tender-box">
+                                <a href="#" class="tender-box--document"><i class='fas fa-file-pdf'></i></a>
+                                <div class="tender-box--header">
+                                    <img src="./img/Company-sample.png" />
+                                </div>
+                                
+                                <h4 class="tender-box--busName text-primary font-bold mt-2">Business Name</h4>
+                                <h5 class="tender-box--title text-lightBlue mb-3">Tender Title</h5>
+            
+                                <p class="tender-box--desc mb-3 text-primary">
+                                    Lorem ipsum dolor sit amet, consete tur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+                                </p>
+            
+                                <div class="tender-box--footer ml-auto mt-3 mb-2">
+                                    <a href="#"><span class="arrow-wide arrow-wide--small"></span><span class="arrow-wide arrow-wide--small"></span></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="tender-box">
+                                <a href="#" class="tender-box--document"><i class='fas fa-file-pdf'></i></a>
+                                <div class="tender-box--header">
+                                    <img src="./img/Company-sample.png" />
+                                </div>
+                                
+                                <h4 class="tender-box--busName text-primary font-bold mt-2">Business Name</h4>
+                                <h5 class="tender-box--title text-lightBlue mb-3">Tender Title</h5>
+            
+                                <p class="tender-box--desc mb-3 text-primary">
+                                    Lorem ipsum dolor sit amet, consete tur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+                                </p>
+            
+                                <div class="tender-box--footer ml-auto mt-3 mb-2">
+                                    <a href="#"><span class="arrow-wide arrow-wide--small"></span><span class="arrow-wide arrow-wide--small"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide">
+                            <div class="tender-box">
+                                <a href="#" class="tender-box--document"><i class='fas fa-file-pdf'></i></a>
+                                <div class="tender-box--header">
+                                    <img src="./img/Company-sample.png" />
+                                </div>
+                                
+                                <h4 class="tender-box--busName text-primary font-bold mt-2">Business Name</h4>
+                                <h5 class="tender-box--title text-lightBlue mb-3">Tender Title</h5>
+            
+                                <p class="tender-box--desc mb-3 text-primary">
+                                    Lorem ipsum dolor sit amet, consete tur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+                                </p>
+            
+                                <div class="tender-box--footer ml-auto mt-3 mb-2">
+                                    <a href="#"><span class="arrow-wide arrow-wide--small"></span><span class="arrow-wide arrow-wide--small"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide">
+                            <div class="tender-box">
+                                <a href="#" class="tender-box--document"><i class='fas fa-file-pdf'></i></a>
+                                <div class="tender-box--header">
+                                    <img src="./img/Company-sample.png" />
+                                </div>
+                                
+                                <h4 class="tender-box--busName text-primary font-bold mt-2">Business Name</h4>
+                                <h5 class="tender-box--title text-lightBlue mb-3">Tender Title</h5>
+            
+                                <p class="tender-box--desc mb-3 text-primary">
+                                    Lorem ipsum dolor sit amet, consete tur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+                                </p>
+            
+                                <div class="tender-box--footer ml-auto mt-3 mb-2">
+                                    <a href="#"><span class="arrow-wide arrow-wide--small"></span><span class="arrow-wide arrow-wide--small"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+
+
+
+            </div>
+            <div class="col-lg-4 tenders-animation__left mt-3 mt-sm-0">
+                <img src="./img/tenders-image.svg" class="tenders-leftImage w-100" height="360" />
+            </div>
+        </div>
+    </div>
+ </section>
+
+
+
+
+
+ <!---- 3rd section ---->
+ <section class="page-section relative  bg-silver mask-cover--left">
+    <div class="container-fluid">
+        <div class="row mb-5">
+            <div class="col-12 text-center">
+                <h1 class="heading-md">
+                    <label class="text-start">
+                        <span class="text-primary d-block small">Platform</span> 
+                        <span class="text-yellow letter-space-05">FEATURES</span>
+                    </label>
+                    <label class="text-primary">&</label>
+                    <label class="text-start">
+                        <span class="text-primary d-block small">Users & Companies</span> 
+                        <span class="text-blue letter-space-05">SERVICES</span>
+                    </label>
+                </h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 text-center">
+                <div class="services-circle">
+                    <img src="./img/services/circle.png" class="mid-circle" width="220" />
+                    
+                    <div class="curve curve-1">
+                        <img src="./img/services/touch.svg" />
+                        <div class="desc">
+                            <div>
+                                <h4>Tender Release</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                            </div>
+                        </div>
+                       
+                    
+                    </div>
+                    <div class="curve curve-2">
+                        <img src="./img/services/settings.svg" />
+                        <div class="desc">
+                            <div>
+                                <h4>Tender Adminstration</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                            </div>
+                        </div>
+                   
+                    </div>
+                    <div class="curve curve-3">
+                        <img src="./img/services/menu.svg" />
+                        <div class="desc">
+                            <div>
+                                <h4>Least Auction</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                            </div>
+                        </div>
+                     
+                    </div>
+                    <div class="curve curve-4">
+                        <img src="./img/services/search.svg" />
+                        <div class="desc">
+                            <div>
+                                <h4>Sourcing Services</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                            </div>
+                        </div>    
+                       
+                    </div>
+                    <div class="curve curve-5">
+                        <img src="./img/services/loud.svg" />
+                        <div class="desc">
+                            <div>
+                                <h4>Marketing Services</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                            </div>
+                        </div>
+                      
+                    </div>
+                    <div class="curve curve-6">
+                        <img src="./img/services/screen.svg" />
+                        <div class="desc">
+                            <div>
+                                <h4>Dashboard</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                            </div>
+                        </div>
+                   
+                    
+                    </div>
+                    <div class="curve curve-7">
+                        <img src="./img/services/finance.svg" />
+                        <div class="desc">
+                            <div>
+                                <h4>Least Auction Module</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                            </div>
+                        </div>  
+                       
+                    </div>
+                    <div class="curve curve-8">
+                        <img src="./img/services/groups.svg" />
+                        <div class="desc">
+                          
+                            <div>
+                                <h4>E-Tender Module</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                            </div>
+                        </div>
+                     
+                    </div>
+                    <div class="curve curve-9">
+                        <img src="./img/services/chats.svg" />
+                        <div class="desc">
+                            <div>
+                                <h4>Internal Communication</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                            </div>
+                        </div>    
+                       
+                    </div>
+                    <div class="curve curve-10">
+                        <img src="./img/services/person.svg" />
+                        <div class="desc">
+                            <div>
+                                <h4>Company Profiling</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                            </div>
+                        </div>
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ </section>
+
+
+ <!--- 4th Section -->
+ <section class="page-section relative hide-overflow ">
+    <div class="container-fluid px-0">
+                <div class="swiper home-big-row">
+                    <div class="swiper-wrapper">
+                      
+                        <div class="swiper-slide">
+                              <img src="./img/sliders/s1.png" />
+                        </div>
+                        
+                        <div class="swiper-slide">
+                            <img src="./img/sliders/s2.png" />
+                        </div>
+                         <div class="swiper-slide">
+                             <img src="./img/sliders/s3.png" />
+                         </div>
+                  
+                    </div>
+                  </div>
+
+    </div>
+ </section>
+
+ 
+ <!--- 5th Section -->
+ <section class="page-section relative bg-silver hide-overflow ">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="text-primary section-heading">News & Announcement</h2>
+            </div>
+        </div>
+        <div class="row mt-4 align-items-center">
+            <div class="col-lg-4 col-sm-6 col-xl-3 mb-4">
+                <h3 class="text-lightBlue news-title"><a href="#"><span class="arrow-wide arrow-wide--smaller"></span><span class="arrow-wide arrow-wide--smaller"></span></a> <span>Title</span></h3>
+                <p class="news-desc text-primary">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy or tempor invidunt ut labore et dolore magna aliquyam erat, sed diam</p>
+                <div class="news-image">
+                    <img src="./img/undraw_posting_photo.svg" class="w-100" />
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 col-xl-3 mb-4">
+                <h3 class="text-lightBlue news-title"><a href="#"><span class="arrow-wide arrow-wide--smaller"></span><span class="arrow-wide arrow-wide--smaller"></span></a> <span>Title</span></h3>
+                <p class="news-desc text-primary">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy or tempor invidunt ut labore et dolore magna aliquyam erat, sed diam</p>
+                <div class="news-image">
+                    <img src="./img/undraw_posting_photo.svg" class="w-100" />
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 col-xl-3 mb-4">
+                <h3 class="text-lightBlue news-title"><a href="#"><span class="arrow-wide arrow-wide--smaller"></span><span class="arrow-wide arrow-wide--smaller"></span></a> <span>Title</span></h3>
+                <p class="news-desc text-primary">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy or tempor invidunt ut labore et dolore magna aliquyam erat, sed diam</p>
+                <div class="news-image">
+                    <img src="./img/undraw_posting_photo.svg" class="w-100" />
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-sm-6 col-xl-3 mb-4">
+                <img src="./img/news-image.svg" class="w-100" height="360">
+            </div>
+
+            <div class="col-lg-4 col-sm-6 col-xl-3 mb-4">
+                <h3 class="text-lightBlue news-title"><a href="#"><span class="arrow-wide arrow-wide--smaller"></span><span class="arrow-wide arrow-wide--smaller"></span></a> <span>Title</span></h3>
+                <p class="news-desc text-primary">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy or tempor invidunt ut labore et dolore magna aliquyam erat, sed diam</p>
+                <div class="news-image">
+                    <img src="./img/undraw_posting_photo.svg" class="w-100" />
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 col-xl-3 mb-4">
+                <h3 class="text-lightBlue news-title"><a href="#"><span class="arrow-wide arrow-wide--smaller"></span><span class="arrow-wide arrow-wide--smaller"></span></a> <span>Title</span></h3>
+                <p class="news-desc text-primary">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy or tempor invidunt ut labore et dolore magna aliquyam erat, sed diam</p>
+                <div class="news-image">
+                    <img src="./img/undraw_posting_photo.svg" class="w-100" />
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 col-xl-3 mb-4">
+                <h3 class="text-lightBlue news-title"><a href="#"><span class="arrow-wide arrow-wide--smaller"></span><span class="arrow-wide arrow-wide--smaller"></span></a> <span>Title</span></h3>
+                <p class="news-desc text-primary">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy or tempor invidunt ut labore et dolore magna aliquyam erat, sed diam</p>
+                <div class="news-image">
+                    <img src="./img/undraw_posting_photo.svg" class="w-100" />
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 col-xl-3 mb-4">
+                <h3 class="text-lightBlue news-title"><a href="#"><span class="arrow-wide arrow-wide--smaller"></span><span class="arrow-wide arrow-wide--smaller"></span></a> <span>Title</span></h3>
+                <p class="news-desc text-primary">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy or tempor invidunt ut labore et dolore magna aliquyam erat, sed diam</p>
+                <div class="news-image">
+                    <img src="./img/undraw_posting_photo.svg" class="w-100" />
+                </div>
+            </div>
+        </div>
+
+    </div>
+ </section>
+
+
+ <!--- 6th Section -->
+ <section class="page-section contact-section relative hide-overflow ">
+    <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h1 class="text-center heading-xl"><span class="text-primary">Contact</span> <span class="text-yellow">US</span></h1>
+                        <div class="row text-sm-center mt-5">
+                            <div class="col-12 col-sm-4 mt-1">
+                                <div class="icon-yellow">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <label class="d-sm-block text-primary mt-sm-2 small">Registration</label>
+                            </div>
+                            <div class="col-12 col-sm-4 mt-1">
+                                <div class="icon-yellow">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                
+                                <label class="d-sm-block text-primary mt-sm-2 small">+962 78 500 4950 </label>
+                                <label class="d-sm-block text-primary small">+962 78 500 4950</label>
+                            </div>
+                            <div class="col-12 col-sm-4 mt-1">
+                                <div class="icon-yellow">
+                                    <img src="./img/location.svg" />
+                                </div>
+                                <label class="d-sm-block text-primary mt-sm-2 small">25 East Middleton 25 southpoint St. US, 1154</label>
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-12">
+                                <form>
+                                    <div class="form-group row">
+                                        <div class="col-sm-6">
+                                            <div class="form-floating  mt-3">
+                                                <input type="text" class="form-control rounded-1" placeholder="First Name">
+                                                <label>*First Name</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-floating  mt-3">
+                                                <input type="text" class="form-control rounded-1" placeholder="Last Name">
+                                                <label>*Last Name</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-floating  mt-3">
+                                                <input type="text" class="form-control rounded-1" placeholder="First Name">
+                                                <label>Email</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-floating  mt-3">
+                                                <input type="text" class="form-control rounded-1" placeholder="Last Name">
+                                                <label>Company Name</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-floating  mt-3">
+                                                <select class="form-control rounded-1">
+                                                    <option>type</option>
+                                                    <option>type</option>
+                                                </select>
+                                                <label>Inquire Type</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-floating  mt-3">
+                                               <textarea class="form-control rounded-1" ></textarea>
+                                                <label>Ask Us</label>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-6">
+                                            <div class="form-check mt-3">
+                                                <input type="checkbox" class="form-check-input" id="check1" name="check1">
+                                                <label class="form-check-label" for="check1"> I Agree</label>
+                                              </div>
+                                          </div>
+
+                                          <div class="col-12 mt-4 text-center">
+                                            <button class="btn btn-yellow rounded-30 px-5 py-2">SEND</button>
+                                        </div>
+
+                                    </div>                                    
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="./img/map.jpg" class="mw-100" />
+                    </div>
+                    
+                </div>
+
+    </div>
+ </section>
+
+</div>
+<!-- End of Main Content -->
+
+<!-- Footer -->
+<footer class="sticky-footer footer">
+    <div class="container my-auto">
+        <div class="row">
+                  
+                    <div class="col-12">
+                        <div class="logo-animation relative d-inline-block">
+                            <a href="#" class="d-inline-block">
+                                <img src="./img/logo-white.svg" width="132" class="mw-100 mb-3" />
+                            </a>
+                            <img src="./img/footer-arrow.svg" class="arrow arrow-first" />
+                            <img src="./img/footer-arrow.svg" class="arrow arrow-second" />
+                            <img src="./img/footer-arrow.svg" class="arrow arrow-third" />
+                        </div>
+                    </div>
+
+                    <div class="col-xl-2 mt-4">
+                        <h6 class="text-white font-bold">Company Information</h6>
+                        <ul class="footer-list">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">News & press releases</a></li>
+                            <li><a href="#">Our services</a></li>
+                            <li><a href="#">Terms & conditions</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-2 mt-4">
+                        <h6 class="text-white font-bold">Help & support</h6>
+                        <ul class="footer-list">
+                            <li><a href="#">Contact us</a></li>
+                            <li><a href="#">Help & FAQ</a></li>
+                            <li><a href="#">Privacy policy</a></li>
+                            <li><a href="#">Cookie's policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-2 mt-4">
+                        <h6 class="text-white font-bold">Our Standards</h6>
+                        <ul class="footer-list">
+                            <li><a href="#">Our Confidentially</a></li>
+                            <li><a href="#">Protection Standards</a></li>
+                            <li><a href="#">Our External Teams</a></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="col-xl-4 mt-4">
+                
+                        <h6 class="text-white font-bold">Subscribe to Newsletter</h6>
+                        <form class="masthead--search relative mt-4 mb-3">
+                            <input type="text" class="form-control masthead--searchInput"  placeholder="Email">
+                            <button class="btn btn-yellow rounded-30 py-2" type="button">Subscribe</button>
+                        </form>
+                            <div class="form-check mt-0 mx-3">
+                                <input type="checkbox" class="form-check-input" id="check1" name="check1">
+                                <label class="form-check-label" for="check1"> I Agree</label>
+                              </div>
+                    </div>
+                    <div class="col-xl-2 mt-4">
+                        <h6 class="text-white font-bold">Download the App</h6>
+                        <a href="#"><img src="./img/google-play.svg" class="mw-100 mt-3" /></a>
+                        <a href="#"><img src="./img/app-store.svg" class="mw-100 mt-3" /></a>
+                    </div>
+
+        </div>
+        <div class="row">
+            <div class="col-12 mt-4 mt-sm-2">
+                <label>Language</label>
+                <div class="dropdown px-sm-3 px-2 d-inline"> <a class="d-inline-block ps-0 py-2 pe-3 text-white text-decoration-none dropdown-toggle fw-medium" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">EN</a>
+                    <ul class="dropdown-menu dropdown-menu-end border-0 shadow-lg" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#!">EN</a></li>
+                      <li><a class="dropdown-item" href="#!">AR</a></li>
+                    </ul>
+                </div>
+                <div class="d-sm-inline mt-3 mb-3 mb-sm-0 mt-sm-0 mx-sm-1">
+                    <a href="#" class="icon-yellow align-middle">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="icon-yellow align-middle mx-1">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="icon-yellow align-middle mx-1">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a  href="#" class="icon-yellow align-middle mx-1">
+                        <i class="fab fa-snapchat-ghost"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <hr class="mb-4 mb-sm-1 mt-5" />
+        <div class="copyright text-center mt-1 row  align-items-center">
+            <div class="col-sm-6 text-sm-start mb-0 mb-sm-0 mb-3">
+                <span>&copy; Powered by Max innovation</span> 
+            </div>
+           
+           <div class="col-sm-6 text-sm-end">
+                <span>&copy; Website 2022 • Created by</span> <a href="#" width="150" target="_blank"><img src="./img/logo-company.jpg" /></a>
+           </div>
+
+        </div>
+    </div>
+</footer>
+<!-- End of Footer -->
+
+</div>
+<!-- End of Content Wrapper -->
+
+
+</div>
+<!-- End of Page Wrapper -->
+
+<!-- Scroll to Top Button-->
+<a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+</a>
+
+<!-- Logout Modal-->
+<div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                <a class="btn btn-primary" href="login.html">Logout</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap core JavaScript-->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Core plugin JavaScript-->
+<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+<script src="vendor/select2/select2.min.js"></script>
+<script src="vendor/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+
+<!--Swiper JS-->
+<script src="vendor/swiper/swiper-bundle.min.js"></script>
+
+
+<!-- Page level plugins -->
+
+<script src="vendor/chart.js/Chart.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.0.0/chartjs-plugin-datalabels.min.js" integrity="sha512-R/QOHLpV1Ggq22vfDAWYOaMd5RopHrJNMxi8/lJu8Oihwi4Ho4BRFeiMiCefn9rasajKjnx9/fTQ/xkWnkDACg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-piechart-outlabels@0.1.4/dist/chartjs-plugin-piechart-outlabels.min.js"></script>
+
+<!-- Custom scripts for all pages-->
+<script src="js/gs-admin.js"></script>
+
+<!--if you wish animate the charts on scroll-->
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-deferred@1"></script>
+<!-- Page level custom scripts -->
+<script src="js/demo/file-upload.js"></script>
+<!--<script src="js/demo/chart-area-demo.js"></script>-->
+<script src="js/demo/chart-pie-demo.js"></script>
+<script src="js/demo/chart-lines-demo.js"></script>
+
+</body>
+
+</html>

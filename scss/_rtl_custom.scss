@@ -1,6 +1,12 @@
 
 body{
     font-family: 'Cairo', sans-serif;
+    direction: rtl;
+    text-align: right;
+}
+
+.ms-auto{
+margin-left: auto !important
 }
 
 @media (min-width: 768px){
@@ -91,3 +97,29 @@ input[type='checkbox'] + label, input[type='radio'] + label{
   .form-control-user + .select2-container--default .select2-selection--single .select2-selection__arrow{
     transform: rotate(180deg);
   }
+
+  /************HOME RTL*****************/
+.masthead--search input{
+    padding-left:115px;
+    padding-right:15px;
+}
+.masthead--search button{
+    right:auto;left:6px;
+}
+.tender__animate-section,
+.services-circle{
+    direction: ltr;
+}
+.tender-box--document{
+    right:auto;
+    left:0;
+    border-radius: 15px 0 0 0px;
+}
+
+.arrow-wide--small,.arrow-wide{
+    transform: scale(-1);
+}
+.logo-animation{
+    float:left;
+}
+/************#END# HOME RTL*****************/
