@@ -251,3 +251,41 @@ if ($('.home-big-row').length > 0) {
 
   });
 }
+
+
+
+
+function toggleCheck(el) {
+  $(el).toggleClass('checked');
+}
+
+//Map areas scripts
+
+$('.map-menu a.map-nav').click(function () {
+  $('.map-menu li.active').removeClass('active showSub');
+
+  $(this).parent('li').addClass('active showSub');
+
+  setTimeout(function () {
+    let top = $('.map-menu li.active').offset().top - $('.map-menu').offset().top;
+    $('.map-menu .effect').css('top', top);
+  }, 430);
+});
+
+
+$(document).ready(function () {
+  //highlight map areas
+  if ($('.svgMap').length > 0) {
+    $('.map-menu a.map-nav').each(function () {
+      let area = $(this).attr('data-area');
+      $('path.' + area).addClass('activeArea');
+    });
+  }
+});
+
+
+function toggleMap(area) {
+  $('path.activeArea').removeClass('activeArea');
+
+  $('path.' + area).addClass('activeArea');
+}

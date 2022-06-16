@@ -17,7 +17,17 @@ margin-left: auto !important
 
 }
 
+.navbar-brand{
+    margin-right:0;
+}
 
+.navbar-expand-lg .navbar-nav{
+    margin-left:0 !important;
+}
+.heading-stroke:before{
+    right: 0;
+    left: auto;
+}
 .sidebar #sidebarToggle{
     transform: rotate(180deg);
 }
@@ -90,12 +100,32 @@ input[type='checkbox'] + label, input[type='radio'] + label{
     right: auto;
   }
 
-  .btn-outline-secondary:hover{
+  .btn-outline-secondary:hover,.btn-search,.btn-search:hover{
       color:#6c757d;
   }
 
   .form-control-user + .select2-container--default .select2-selection--single .select2-selection__arrow{
     transform: rotate(180deg);
+  }
+
+  .dropdown-top-search{
+    right: 0 !important;
+    left: auto !important;
+  }
+
+  .middle-bar{
+      &:before{
+          right: auto;
+          left:10px;
+      }
+  }
+  .map-menu:before{
+      right:0;
+      left: auto;
+  }
+  .effect{
+      left:auto;
+      right: -2px;
   }
 
   /************HOME RTL*****************/

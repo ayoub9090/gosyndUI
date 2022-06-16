@@ -17782,6 +17782,15 @@ a:focus {
 h1, .h1 {
   font-size: calc(1.5rem + 1.5vw); }
 
+.letter-space-1 {
+  letter-spacing: 1rem; }
+
+.letter-space-05 {
+  letter-spacing: 0.5rem; }
+
+.letter-space-02 {
+  letter-spacing: 0.22rem; }
+
 #wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -18045,6 +18054,9 @@ th {
   color: #1D222E;
   font-weight: normal; }
 
+.opacit9 {
+  opacity: 0.9; }
+
 .table {
   vertical-align: middle; }
 
@@ -18237,6 +18249,93 @@ th {
 
 .pd-rounded-5 {
   padding: 0.5rem 1.5rem; }
+
+.chart .title {
+  font-size: 0.9rem;
+  font-weight: normal; }
+
+.donut-chart {
+  height: 75px;
+  width: 75px;
+  position: relative;
+  margin: auto; }
+  .donut-chart.active circle {
+    stroke-dasharray: 65 100; }
+  .donut-chart svg {
+    width: 100%;
+    height: 100%;
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    background: transparent;
+    border-radius: 50%; }
+  .donut-chart circle {
+    fill: #E7EDF0;
+    stroke: #F1C518;
+    stroke-width: 6;
+    stroke-dasharray: 0 100;
+    -webkit-transition: stroke-dasharray 0.9s ease;
+    -o-transition: stroke-dasharray 0.9s ease;
+    transition: stroke-dasharray 0.9s ease; }
+
+.donut-center {
+  background: #1d222e;
+  border-radius: 50%;
+  position: absolute;
+  height: 85%;
+  width: 85%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .donut-center span {
+    font-size: 1rem; }
+
+.width-3 {
+  width: 3rem; }
+
+hr.strength-hr {
+  height: 10px; }
+
+.bg-gray {
+  background: #F5F5F7; }
+  .bg-gray-darker {
+    background-color: #D3D3D3; }
+
+.shadow-box {
+  -webkit-box-shadow: 0px 0px 15px #0000001A;
+  box-shadow: 0px 0px 15px #0000001A; }
+
+.heading-stroke {
+  position: relative;
+  font-weight: bold; }
+  .heading-stroke:before {
+    content: '';
+    width: 20px;
+    border-bottom: 1px solid;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -1px; }
+
+.bg-primary-dark {
+  background-color: #1D222E; }
+  .bg-primary-dark--mask {
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    background-image: url(../img/right-sector-mask.svg); }
 
 @-webkit-keyframes growIn {
   0% {
@@ -18552,6 +18651,10 @@ th {
 
 .bg-yellow {
   background-color: #F1C518 !important; }
+
+@media (max-width: 992px) {
+  .main-nav:before {
+    width: 5rem !important; } }
 
 .topbar {
   height: 4.375rem; }
@@ -19798,6 +19901,17 @@ form.contact-us {
   padding-top: 11rem;
   padding-bottom: 8rem;
   width: 100%; }
+  .masthead--company {
+    padding-top: 0rem;
+    padding-bottom: 2rem; }
+    .masthead--company:before {
+      content: '';
+      display: block;
+      background-color: #fff;
+      width: 100%;
+      height: 10rem; }
+    .masthead--company > div {
+      padding-top: 2rem; }
   @media (min-width: 1200px) {
     .masthead h1, .masthead .h1 {
       font-size: 2.9rem; }
@@ -19879,12 +19993,6 @@ form.contact-us {
     display: inline-block;
     vertical-align: middle; }
 
-.letter-space-1 {
-  letter-spacing: 1rem; }
-
-.letter-space-05 {
-  letter-spacing: 0.5rem; }
-
 .tender-box {
   position: relative;
   -webkit-box-shadow: 0px 0px 10px #00000029;
@@ -19921,6 +20029,10 @@ form.contact-us {
     color: #315E8A; }
   .tender-box--busName {
     text-align: center; }
+  .tender-box--list {
+    list-style: none;
+    padding: 0;
+    font-size: 0.77rem; }
 
 @media (min-width: 992px) {
   .tenders-animation__left {
@@ -20519,6 +20631,145 @@ form.contact-us {
   .icon-yellow:hover {
     color: #fff; }
 
+.company--img {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 1rem; }
+
+.company--favorite {
+  color: #fff !important;
+  text-decoration: none; }
+  .company--favorite.checked i {
+    color: #F1C518; }
+
+.map-menu {
+  list-style: none;
+  position: relative;
+  padding-left: 20px; }
+  .map-menu:before {
+    content: '';
+    border-right: 1px solid #1d222e;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%; }
+  .map-menu li {
+    position: relative;
+    padding-bottom: 8px;
+    display: block; }
+    .map-menu li ul {
+      padding: 0;
+      margin-top: 6px; }
+    .map-menu li .sub li {
+      padding-top: 0;
+      padding-bottom: 0;
+      height: 0;
+      overflow: hidden;
+      -webkit-transition: 0.4s ease-in-out;
+      -o-transition: 0.4s ease-in-out;
+      transition: 0.4s ease-in-out; }
+    .map-menu li .sub--all {
+      display: block !important; }
+    .map-menu li .sub--single {
+      display: none !important; }
+    .map-menu li a {
+      color: #1d222e;
+      opacity: 0.7;
+      font-weight: bold;
+      text-decoration: none;
+      -webkit-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s; }
+      .map-menu li a span {
+        font-weight: normal;
+        color: #61656E;
+        opacity: 0.7;
+        font-size: 90%; }
+    .map-menu li.active a {
+      opacity: 1; }
+    .map-menu li.legend-nav {
+      margin-top: 4rem; }
+      .map-menu li.legend-nav span {
+        font-weight: normal;
+        color: #61656E;
+        opacity: 0.7;
+        font-size: 90%; }
+      .map-menu li.legend-nav label {
+        color: #1d222e;
+        font-weight: bold;
+        text-decoration: none; }
+    .map-menu li.showSub .sub li {
+      height: 56px; }
+    .map-menu li.showSub .sub--all {
+      display: none !important; }
+    .map-menu li.showSub .sub--single {
+      display: block !important; }
+
+.effect {
+  position: absolute;
+  top: 0;
+  border-right: 4px solid #61656E;
+  position: absolute;
+  top: 0;
+  left: -1px;
+  height: 56px;
+  -webkit-transition: 0.7s ease-in-out;
+  -o-transition: 0.7s ease-in-out;
+  transition: 0.7s ease-in-out; }
+
+/**********MAP****************/
+#world-map path {
+  -webkit-animation: all 0.3s;
+  animation: all 0.3s; }
+
+#world-map path.activeArea {
+  fill: #315E8A;
+  -webkit-animation: glow 1.5s linear infinite alternate;
+  animation: glow 1.5s linear infinite alternate;
+  -webkit-filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 0.9));
+  filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 0.9));
+  border-radius: 50%;
+  -webkit-clip-path: circle(70%);
+  clip-path: circle(70%); }
+
+@-webkit-keyframes glow {
+  to {
+    -webkit-box-shadow: 0px 0px 30px 20px #535FED;
+    box-shadow: 0px 0px 30px 20px #535FED; } }
+
+@keyframes glow {
+  to {
+    -webkit-box-shadow: 0px 0px 30px 20px #535FED;
+    box-shadow: 0px 0px 30px 20px #535FED; } }
+
+/**************#END# MAP*****************/
+.project-row {
+  -webkit-box-shadow: 0px 0px 15px #0000001A;
+  box-shadow: 0px 0px 15px #0000001A; }
+
+.project-img {
+  overflow: hidden; }
+  .project-img img {
+    max-width: 100%; }
+
+@media (max-width: 767px) {
+  .xs-scale {
+    width: 94px !important;
+    margin-bottom: 1rem; } }
+
+.middle-bar {
+  position: relative; }
+  @media (min-width: 576px) {
+    .middle-bar::before {
+      content: '';
+      position: absolute;
+      height: 40px;
+      width: 2px;
+      right: 10px;
+      top: 50%;
+      margin-top: -20px;
+      background-color: #F1C518; } }
+
 .error {
   color: #5a5c69;
   font-size: 7rem;
@@ -20528,91 +20779,91 @@ form.contact-us {
 
 @-webkit-keyframes noise-anim {
   0% {
-    clip: rect(15px, 9999px, 9px, 0); }
+    clip: rect(28px, 9999px, 38px, 0); }
   5% {
-    clip: rect(15px, 9999px, 17px, 0); }
+    clip: rect(23px, 9999px, 83px, 0); }
   10% {
-    clip: rect(72px, 9999px, 54px, 0); }
+    clip: rect(90px, 9999px, 14px, 0); }
   15% {
-    clip: rect(71px, 9999px, 16px, 0); }
+    clip: rect(46px, 9999px, 2px, 0); }
   20% {
-    clip: rect(14px, 9999px, 96px, 0); }
+    clip: rect(87px, 9999px, 38px, 0); }
   25% {
-    clip: rect(99px, 9999px, 64px, 0); }
+    clip: rect(12px, 9999px, 14px, 0); }
   30% {
-    clip: rect(42px, 9999px, 22px, 0); }
+    clip: rect(71px, 9999px, 36px, 0); }
   35% {
-    clip: rect(94px, 9999px, 61px, 0); }
+    clip: rect(30px, 9999px, 67px, 0); }
   40% {
-    clip: rect(90px, 9999px, 75px, 0); }
+    clip: rect(66px, 9999px, 43px, 0); }
   45% {
-    clip: rect(30px, 9999px, 20px, 0); }
+    clip: rect(53px, 9999px, 43px, 0); }
   50% {
-    clip: rect(3px, 9999px, 35px, 0); }
+    clip: rect(89px, 9999px, 98px, 0); }
   55% {
-    clip: rect(20px, 9999px, 99px, 0); }
+    clip: rect(15px, 9999px, 68px, 0); }
   60% {
-    clip: rect(90px, 9999px, 48px, 0); }
+    clip: rect(37px, 9999px, 99px, 0); }
   65% {
-    clip: rect(59px, 9999px, 56px, 0); }
+    clip: rect(60px, 9999px, 96px, 0); }
   70% {
-    clip: rect(93px, 9999px, 73px, 0); }
+    clip: rect(12px, 9999px, 23px, 0); }
   75% {
-    clip: rect(16px, 9999px, 34px, 0); }
+    clip: rect(16px, 9999px, 29px, 0); }
   80% {
-    clip: rect(15px, 9999px, 9px, 0); }
+    clip: rect(58px, 9999px, 21px, 0); }
   85% {
-    clip: rect(32px, 9999px, 23px, 0); }
+    clip: rect(28px, 9999px, 51px, 0); }
   90% {
-    clip: rect(16px, 9999px, 22px, 0); }
+    clip: rect(18px, 9999px, 75px, 0); }
   95% {
-    clip: rect(95px, 9999px, 95px, 0); }
+    clip: rect(63px, 9999px, 27px, 0); }
   100% {
-    clip: rect(94px, 9999px, 6px, 0); } }
+    clip: rect(54px, 9999px, 3px, 0); } }
 
 @keyframes noise-anim {
   0% {
-    clip: rect(15px, 9999px, 9px, 0); }
+    clip: rect(28px, 9999px, 38px, 0); }
   5% {
-    clip: rect(15px, 9999px, 17px, 0); }
+    clip: rect(23px, 9999px, 83px, 0); }
   10% {
-    clip: rect(72px, 9999px, 54px, 0); }
+    clip: rect(90px, 9999px, 14px, 0); }
   15% {
-    clip: rect(71px, 9999px, 16px, 0); }
+    clip: rect(46px, 9999px, 2px, 0); }
   20% {
-    clip: rect(14px, 9999px, 96px, 0); }
+    clip: rect(87px, 9999px, 38px, 0); }
   25% {
-    clip: rect(99px, 9999px, 64px, 0); }
+    clip: rect(12px, 9999px, 14px, 0); }
   30% {
-    clip: rect(42px, 9999px, 22px, 0); }
+    clip: rect(71px, 9999px, 36px, 0); }
   35% {
-    clip: rect(94px, 9999px, 61px, 0); }
+    clip: rect(30px, 9999px, 67px, 0); }
   40% {
-    clip: rect(90px, 9999px, 75px, 0); }
+    clip: rect(66px, 9999px, 43px, 0); }
   45% {
-    clip: rect(30px, 9999px, 20px, 0); }
+    clip: rect(53px, 9999px, 43px, 0); }
   50% {
-    clip: rect(3px, 9999px, 35px, 0); }
+    clip: rect(89px, 9999px, 98px, 0); }
   55% {
-    clip: rect(20px, 9999px, 99px, 0); }
+    clip: rect(15px, 9999px, 68px, 0); }
   60% {
-    clip: rect(90px, 9999px, 48px, 0); }
+    clip: rect(37px, 9999px, 99px, 0); }
   65% {
-    clip: rect(59px, 9999px, 56px, 0); }
+    clip: rect(60px, 9999px, 96px, 0); }
   70% {
-    clip: rect(93px, 9999px, 73px, 0); }
+    clip: rect(12px, 9999px, 23px, 0); }
   75% {
-    clip: rect(16px, 9999px, 34px, 0); }
+    clip: rect(16px, 9999px, 29px, 0); }
   80% {
-    clip: rect(15px, 9999px, 9px, 0); }
+    clip: rect(58px, 9999px, 21px, 0); }
   85% {
-    clip: rect(32px, 9999px, 23px, 0); }
+    clip: rect(28px, 9999px, 51px, 0); }
   90% {
-    clip: rect(16px, 9999px, 22px, 0); }
+    clip: rect(18px, 9999px, 75px, 0); }
   95% {
-    clip: rect(95px, 9999px, 95px, 0); }
+    clip: rect(63px, 9999px, 27px, 0); }
   100% {
-    clip: rect(94px, 9999px, 6px, 0); } }
+    clip: rect(54px, 9999px, 3px, 0); } }
 
 .error:after {
   content: attr(data-text);
@@ -20628,91 +20879,91 @@ form.contact-us {
 
 @-webkit-keyframes noise-anim-2 {
   0% {
-    clip: rect(41px, 9999px, 42px, 0); }
+    clip: rect(56px, 9999px, 88px, 0); }
   5% {
-    clip: rect(65px, 9999px, 100px, 0); }
+    clip: rect(39px, 9999px, 86px, 0); }
   10% {
-    clip: rect(33px, 9999px, 97px, 0); }
+    clip: rect(35px, 9999px, 93px, 0); }
   15% {
-    clip: rect(29px, 9999px, 74px, 0); }
+    clip: rect(32px, 9999px, 55px, 0); }
   20% {
-    clip: rect(22px, 9999px, 37px, 0); }
+    clip: rect(34px, 9999px, 10px, 0); }
   25% {
-    clip: rect(70px, 9999px, 27px, 0); }
+    clip: rect(54px, 9999px, 84px, 0); }
   30% {
-    clip: rect(60px, 9999px, 92px, 0); }
+    clip: rect(87px, 9999px, 70px, 0); }
   35% {
-    clip: rect(74px, 9999px, 90px, 0); }
+    clip: rect(44px, 9999px, 97px, 0); }
   40% {
-    clip: rect(75px, 9999px, 4px, 0); }
+    clip: rect(98px, 9999px, 66px, 0); }
   45% {
-    clip: rect(72px, 9999px, 47px, 0); }
+    clip: rect(73px, 9999px, 31px, 0); }
   50% {
-    clip: rect(40px, 9999px, 45px, 0); }
+    clip: rect(48px, 9999px, 5px, 0); }
   55% {
-    clip: rect(78px, 9999px, 45px, 0); }
+    clip: rect(77px, 9999px, 30px, 0); }
   60% {
-    clip: rect(76px, 9999px, 25px, 0); }
+    clip: rect(16px, 9999px, 3px, 0); }
   65% {
-    clip: rect(74px, 9999px, 88px, 0); }
+    clip: rect(51px, 9999px, 19px, 0); }
   70% {
-    clip: rect(43px, 9999px, 92px, 0); }
+    clip: rect(90px, 9999px, 26px, 0); }
   75% {
-    clip: rect(59px, 9999px, 47px, 0); }
+    clip: rect(21px, 9999px, 56px, 0); }
   80% {
-    clip: rect(7px, 9999px, 4px, 0); }
+    clip: rect(95px, 9999px, 52px, 0); }
   85% {
-    clip: rect(92px, 9999px, 52px, 0); }
+    clip: rect(36px, 9999px, 74px, 0); }
   90% {
-    clip: rect(62px, 9999px, 25px, 0); }
+    clip: rect(47px, 9999px, 37px, 0); }
   95% {
-    clip: rect(54px, 9999px, 78px, 0); }
+    clip: rect(15px, 9999px, 64px, 0); }
   100% {
-    clip: rect(79px, 9999px, 4px, 0); } }
+    clip: rect(51px, 9999px, 66px, 0); } }
 
 @keyframes noise-anim-2 {
   0% {
-    clip: rect(41px, 9999px, 42px, 0); }
+    clip: rect(56px, 9999px, 88px, 0); }
   5% {
-    clip: rect(65px, 9999px, 100px, 0); }
+    clip: rect(39px, 9999px, 86px, 0); }
   10% {
-    clip: rect(33px, 9999px, 97px, 0); }
+    clip: rect(35px, 9999px, 93px, 0); }
   15% {
-    clip: rect(29px, 9999px, 74px, 0); }
+    clip: rect(32px, 9999px, 55px, 0); }
   20% {
-    clip: rect(22px, 9999px, 37px, 0); }
+    clip: rect(34px, 9999px, 10px, 0); }
   25% {
-    clip: rect(70px, 9999px, 27px, 0); }
+    clip: rect(54px, 9999px, 84px, 0); }
   30% {
-    clip: rect(60px, 9999px, 92px, 0); }
+    clip: rect(87px, 9999px, 70px, 0); }
   35% {
-    clip: rect(74px, 9999px, 90px, 0); }
+    clip: rect(44px, 9999px, 97px, 0); }
   40% {
-    clip: rect(75px, 9999px, 4px, 0); }
+    clip: rect(98px, 9999px, 66px, 0); }
   45% {
-    clip: rect(72px, 9999px, 47px, 0); }
+    clip: rect(73px, 9999px, 31px, 0); }
   50% {
-    clip: rect(40px, 9999px, 45px, 0); }
+    clip: rect(48px, 9999px, 5px, 0); }
   55% {
-    clip: rect(78px, 9999px, 45px, 0); }
+    clip: rect(77px, 9999px, 30px, 0); }
   60% {
-    clip: rect(76px, 9999px, 25px, 0); }
+    clip: rect(16px, 9999px, 3px, 0); }
   65% {
-    clip: rect(74px, 9999px, 88px, 0); }
+    clip: rect(51px, 9999px, 19px, 0); }
   70% {
-    clip: rect(43px, 9999px, 92px, 0); }
+    clip: rect(90px, 9999px, 26px, 0); }
   75% {
-    clip: rect(59px, 9999px, 47px, 0); }
+    clip: rect(21px, 9999px, 56px, 0); }
   80% {
-    clip: rect(7px, 9999px, 4px, 0); }
+    clip: rect(95px, 9999px, 52px, 0); }
   85% {
-    clip: rect(92px, 9999px, 52px, 0); }
+    clip: rect(36px, 9999px, 74px, 0); }
   90% {
-    clip: rect(62px, 9999px, 25px, 0); }
+    clip: rect(47px, 9999px, 37px, 0); }
   95% {
-    clip: rect(54px, 9999px, 78px, 0); }
+    clip: rect(15px, 9999px, 64px, 0); }
   100% {
-    clip: rect(79px, 9999px, 4px, 0); } }
+    clip: rect(51px, 9999px, 66px, 0); } }
 
 .error:before {
   content: attr(data-text);
@@ -20781,6 +21032,16 @@ body {
     right: calc(6.5rem + 1.5rem / 2);
     left: auto; } }
 
+.navbar-brand {
+  margin-right: 0; }
+
+.navbar-expand-lg .navbar-nav {
+  margin-left: 0 !important; }
+
+.heading-stroke:before {
+  right: 0;
+  left: auto; }
+
 .sidebar #sidebarToggle {
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
@@ -20842,13 +21103,29 @@ input[type='radio'] + label {
   left: 10px;
   right: auto; }
 
-.btn-outline-secondary:hover {
+.btn-outline-secondary:hover, .btn-search, .btn-search:hover {
   color: #6c757d; }
 
 .form-control-user + .select2-container--default .select2-selection--single .select2-selection__arrow {
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg); }
+
+.dropdown-top-search {
+  right: 0 !important;
+  left: auto !important; }
+
+.middle-bar:before {
+  right: auto;
+  left: 10px; }
+
+.map-menu:before {
+  right: 0;
+  left: auto; }
+
+.effect {
+  left: auto;
+  right: -2px; }
 
 /************HOME RTL*****************/
 .masthead--search input {
