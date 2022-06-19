@@ -1,0 +1,737 @@
+   <!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>GoSynd - Dashboard</title>
+
+    <!-- Custom fonts for this template-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <link href="vendor/select2/select2.min.css" rel="stylesheet" type="text/css">
+
+    <link href="vendor/bootstrap-datepicker/bootstrap-datepicker.min.css" rel="stylesheet" type="text/css">
+
+    <!--Swiper CSS -->
+    <link rel="stylesheet" href="vendor/swiper/swiper-bundle.min.css" />
+  
+    
+    <!-- Custom styles for this template-->
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/gs-admin.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+    <!-- Page Wrapper -->
+    <div>
+ 
+      <nav class="navbar navbar-expand-lg main-nav  fixed-top py-4 d-block" data-navbar-on-scroll="data-navbar-on-scroll" >
+    <div class="container">
+        <a class="navbar-brand" href="index.html"><img src="./img/logo-white.svg" height="62" alt="logo"></a>
+       <div class="relative mr-auto">
+        <button class="btn btn-search " type="button" onclick="" data-bs-toggle="dropdown">
+            <i class="fas fa-search fa-sm"></i>
+        </button>
+        <div class="dropdown-menu dropdown-menu-end border-0 shadow-lg dropdown-top-search"  aria-labelledby="navbarDropdown">
+          <input type="text" class="form-control" placeholder="Search.." />
+        </div>
+      </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><svg class="svg-inline--fa fa-bars fa-w-14 " aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" ><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg></button>
+      <div class="collapse navbar-collapse animate__fadeInDown animate__animated animate__fast  mt-4 mt-lg-0" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto pt-2 pt-lg-0 font-base align-items-lg-center align-items-start">
+          <li class="nav-item active"><a class="nav-link fw-medium" aria-current="page" href="#">Home</a></li>
+          <li class="nav-item "><a class="nav-link fw-medium" aria-current="page" href="#">Public Business</a></li>
+          <li class="nav-item "><a class="nav-link fw-medium" aria-current="page" href="#">Tenders</a></li>
+          <li class="nav-item "><a class="nav-link fw-medium" aria-current="page" href="#">Services</a></li>
+          <li class="nav-item "><a class="nav-link fw-medium" aria-current="page" href="#">News & Announcement</a></li>
+          <li class="nav-item "><a class="nav-link fw-medium" aria-current="page" href="#">About Us</a></li>
+          
+          
+
+          <li class="nav-item px-lg-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" href="#!">Login</a></li>
+          <li class="nav-item px-lg-3 px-xl-4"><a class="btn btn-yellow pd-rounded-5 rounded-30 order-1 order-lg-0 fw-medium" href="#!">Register</a></li>
+          <li class="nav-item dropdown px-sm-3 px-lg-0"> <a class="d-inline-block ps-0 py-2 pe-3 text-white text-decoration-none dropdown-toggle fw-medium" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">EN</a>
+            <ul class="dropdown-menu dropdown-menu-end border-0 shadow-lg"  aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#!">EN</a></li>
+              <li><a class="dropdown-item" href="#!">AR</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+    <!--<div class="mask-top"></div>--> 
+
+ <header class="masthead masthead--small">
+    <div class="container">
+                <div class="row  mt-3 ">
+                    <div class="col-12">
+                    
+                        <div class="row justify-content-center">
+                            <div class="col-sm-8">
+                             <form class="masthead--search relative mt-4 mb-3">
+                                 <input type="text" class="form-control masthead--searchInput" onfocus="openAutoComplete()" onfocusout="closeAutoComplete()" placeholder="Search" />
+                                 <i class="fas fa-fw fa-times" onclick="closeAutoComplete()"></i>
+                                 <button class="btn btn-yellow rounded-30" type="button" >Search</button>
+                                 <div class="autocomplete-box " id="">
+                                     <ul>
+                                         <li class="subheading mb-1 mt-1">Products</li>
+                                         <li><a href="#">Service name business profile</a></li>
+                                         <li><a href="#">Service name business profile</a></li>
+                                         <li class="subheading mb-1 mt-1">Products</li>
+                                         <li><a href="#">Service name business profile</a></li>
+                                         <li><a href="#">Service name business profile</a></li>
+                                         <li class="subheading mb-1 mt-1">Products</li>
+                                         <li><a href="#">Service name business profile</a></li>
+                                         <li><a href="#">Service name business profile</a></li>
+         
+                                     </ul>
+                                 </div>
+                             </form>
+                             </div>
+                         </div>
+                    </div>
+                </div>
+                
+    </div>
+ </header>
+
+ <section class="page-section pt-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-3 col-sm-4">
+                <div class="accordion accordion-flush" id="accordionPanelsStayOpen">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                           <span class="h6 mb-0 text-bold-800"> Country</span>
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne" >
+                        <div class="accordion-body">
+                         <div class="row">
+
+                                    <div class="col-12">
+                                        <input type="text" placeholder="Search" class="form-control rounded-30">
+                                    </div>
+                                    
+                                    <div class="col-12 form-group my-3">
+                                        <div class="checkbox-list">
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input" id="check-trans3" name="radio">
+                                                <label class="form-check-label" for="check-trans3">Afghanistan</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input" id="check-trans3" name="radio">
+                                                <label class="form-check-label" for="check-trans3">Afghanistan</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input" id="check-trans3" name="radio">
+                                                <label class="form-check-label" for="check-trans3">Afghanistan</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input" id="check-trans3" name="radio">
+                                                <label class="form-check-label" for="check-trans3">Afghanistan</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input" id="check-trans3" name="radio">
+                                                <label class="form-check-label" for="check-trans3">Afghanistan</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input" id="check-trans3" name="radio">
+                                                <label class="form-check-label" for="check-trans3">Afghanistan</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input" id="check-trans3" name="radio">
+                                                <label class="form-check-label" for="check-trans3">Afghanistan</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input" id="check-trans3" name="radio">
+                                                <label class="form-check-label" for="check-trans3">Afghanistan</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input" id="check-trans3" name="radio">
+                                                <label class="form-check-label" for="check-trans3">Afghanistan</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                         </div>
+
+                         
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                             <span class="h6 mb-0 text-bold-800"> Industary</span>
+                          </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne" >
+                          <div class="accordion-body">
+                           <div class="row">
+  
+                                      <div class="col-12">
+                                          <input type="text" placeholder="Search" class="form-control rounded-30">
+                                      </div>
+                                      
+                                      <div class="col-12 form-group my-3">
+                                          <div class="checkbox-list">
+                                              <div class="form-check">
+                                                  <input type="checkbox" class="form-check-input" id="check-trans3" name="radio">
+                                                  <label class="form-check-label" for="check-trans3">Afghanistan</label>
+                                              </div>
+                                              <div class="form-check">
+                                                  <input type="checkbox" class="form-check-input" id="check-trans3" name="radio">
+                                                  <label class="form-check-label" for="check-trans3">Afghanistan</label>
+                                              </div>
+                                              <div class="form-check">
+                                                  <input type="checkbox" class="form-check-input" id="check-trans3" name="radio">
+                                                  <label class="form-check-label" for="check-trans3">Afghanistan</label>
+                                              </div>
+                                              <div class="form-check">
+                                                  <input type="checkbox" class="form-check-input" id="check-trans3" name="radio">
+                                                  <label class="form-check-label" for="check-trans3">Afghanistan</label>
+                                              </div>
+                                              <div class="form-check">
+                                                  <input type="checkbox" class="form-check-input" id="check-trans3" name="radio">
+                                                  <label class="form-check-label" for="check-trans3">Afghanistan</label>
+                                              </div>
+                                              <div class="form-check">
+                                                  <input type="checkbox" class="form-check-input" id="check-trans3" name="radio">
+                                                  <label class="form-check-label" for="check-trans3">Afghanistan</label>
+                                              </div>
+                                              <div class="form-check">
+                                                  <input type="checkbox" class="form-check-input" id="check-trans3" name="radio">
+                                                  <label class="form-check-label" for="check-trans3">Afghanistan</label>
+                                              </div>
+                                              <div class="form-check">
+                                                  <input type="checkbox" class="form-check-input" id="check-trans3" name="radio">
+                                                  <label class="form-check-label" for="check-trans3">Afghanistan</label>
+                                              </div>
+                                              <div class="form-check">
+                                                  <input type="checkbox" class="form-check-input" id="check-trans3" name="radio">
+                                                  <label class="form-check-label" for="check-trans3">Afghanistan</label>
+                                              </div>
+                                          </div>
+                                      </div>
+  
+  
+                           </div>
+  
+                           
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                             <span class="h6 mb-0 text-bold-800"> Sector</span>
+                          </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne" >
+                          <div class="accordion-body">
+                           <div class="row">
+  
+                                      <div class="col-12">
+                                          <input type="text" placeholder="Search" class="form-control rounded-30">
+                                      </div>
+                                      
+                                      <div class="col-12 form-group my-3">
+                                          <div class="checkbox-list checkbox-list-heightSmaller">
+                                              <div class="form-check">
+                                                  <input type="checkbox" class="form-check-input" id="check-trans3" name="radio">
+                                                  <label class="form-check-label" for="check-trans3">Afghanistan</label>
+                                              </div>
+                                              <div class="form-check">
+                                                  <input type="checkbox" class="form-check-input" id="check-trans3" name="radio">
+                                                  <label class="form-check-label" for="check-trans3">Afghanistan</label>
+                                              </div>
+                                              <div class="form-check">
+                                                  <input type="checkbox" class="form-check-input" id="check-trans3" name="radio">
+                                                  <label class="form-check-label" for="check-trans3">Afghanistan</label>
+                                              </div>
+                                              <div class="form-check">
+                                                  <input type="checkbox" class="form-check-input" id="check-trans3" name="radio">
+                                                  <label class="form-check-label" for="check-trans3">Afghanistan</label>
+                                              </div>
+                                              <div class="form-check">
+                                                  <input type="checkbox" class="form-check-input" id="check-trans3" name="radio">
+                                                  <label class="form-check-label" for="check-trans3">Afghanistan</label>
+                                              </div>
+                                              <div class="form-check">
+                                                  <input type="checkbox" class="form-check-input" id="check-trans3" name="radio">
+                                                  <label class="form-check-label" for="check-trans3">Afghanistan</label>
+                                              </div>
+                                              <div class="form-check">
+                                                  <input type="checkbox" class="form-check-input" id="check-trans3" name="radio">
+                                                  <label class="form-check-label" for="check-trans3">Afghanistan</label>
+                                              </div>
+                                              <div class="form-check">
+                                                  <input type="checkbox" class="form-check-input" id="check-trans3" name="radio">
+                                                  <label class="form-check-label" for="check-trans3">Afghanistan</label>
+                                              </div>
+                                              <div class="form-check">
+                                                  <input type="checkbox" class="form-check-input" id="check-trans3" name="radio">
+                                                  <label class="form-check-label" for="check-trans3">Afghanistan</label>
+                                              </div>
+                                          </div>
+                                      </div>
+  
+  
+                           </div>
+  
+                           
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                             <span class="h6 mb-0 text-bold-800"> Services</span>
+                          </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne" >
+                          <div class="accordion-body">
+                           <div class="row">
+  
+                                      <div class="col-12">
+                                          <input type="text" placeholder="Search" class="form-control rounded-30">
+                                      </div>
+                                      
+                                      <div class="col-12 form-group my-3">
+                                          <div class="checkbox-list checkbox-list-heightSmaller">
+                                              <div class="form-check">
+                                                  <input type="checkbox" class="form-check-input" id="check-trans3" name="radio">
+                                                  <label class="form-check-label" for="check-trans3">Afghanistan</label>
+                                              </div>
+                                              <div class="form-check">
+                                                  <input type="checkbox" class="form-check-input" id="check-trans3" name="radio">
+                                                  <label class="form-check-label" for="check-trans3">Afghanistan</label>
+                                              </div>
+                                              <div class="form-check">
+                                                  <input type="checkbox" class="form-check-input" id="check-trans3" name="radio">
+                                                  <label class="form-check-label" for="check-trans3">Afghanistan</label>
+                                              </div>
+                                              <div class="form-check">
+                                                  <input type="checkbox" class="form-check-input" id="check-trans3" name="radio">
+                                                  <label class="form-check-label" for="check-trans3">Afghanistan</label>
+                                              </div>
+                                              <div class="form-check">
+                                                  <input type="checkbox" class="form-check-input" id="check-trans3" name="radio">
+                                                  <label class="form-check-label" for="check-trans3">Afghanistan</label>
+                                              </div>
+                                              <div class="form-check">
+                                                  <input type="checkbox" class="form-check-input" id="check-trans3" name="radio">
+                                                  <label class="form-check-label" for="check-trans3">Afghanistan</label>
+                                              </div>
+                                              <div class="form-check">
+                                                  <input type="checkbox" class="form-check-input" id="check-trans3" name="radio">
+                                                  <label class="form-check-label" for="check-trans3">Afghanistan</label>
+                                              </div>
+                                              <div class="form-check">
+                                                  <input type="checkbox" class="form-check-input" id="check-trans3" name="radio">
+                                                  <label class="form-check-label" for="check-trans3">Afghanistan</label>
+                                              </div>
+                                              <div class="form-check">
+                                                  <input type="checkbox" class="form-check-input" id="check-trans3" name="radio">
+                                                  <label class="form-check-label" for="check-trans3">Afghanistan</label>
+                                              </div>
+                                          </div>
+                                      </div>
+  
+  
+                           </div>
+  
+                           
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFife" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                             <span class="h6 mb-0 text-bold-800"> Products</span>
+                          </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseFife" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne" >
+                          <div class="accordion-body">
+                           <div class="row">
+  
+                                      <div class="col-12">
+                                          <input type="text" placeholder="Search" class="form-control rounded-30">
+                                      </div>
+                                      
+                                      <div class="col-12 form-group my-3">
+                                          <div class="checkbox-list checkbox-list-heightSmaller">
+                                              <div class="form-check">
+                                                  <input type="checkbox" class="form-check-input" id="check-trans3" name="radio">
+                                                  <label class="form-check-label" for="check-trans3">Afghanistan</label>
+                                              </div>
+                                              <div class="form-check">
+                                                  <input type="checkbox" class="form-check-input" id="check-trans3" name="radio">
+                                                  <label class="form-check-label" for="check-trans3">Afghanistan</label>
+                                              </div>
+                                              <div class="form-check">
+                                                  <input type="checkbox" class="form-check-input" id="check-trans3" name="radio">
+                                                  <label class="form-check-label" for="check-trans3">Afghanistan</label>
+                                              </div>
+                                              <div class="form-check">
+                                                  <input type="checkbox" class="form-check-input" id="check-trans3" name="radio">
+                                                  <label class="form-check-label" for="check-trans3">Afghanistan</label>
+                                              </div>
+                                              <div class="form-check">
+                                                  <input type="checkbox" class="form-check-input" id="check-trans3" name="radio">
+                                                  <label class="form-check-label" for="check-trans3">Afghanistan</label>
+                                              </div>
+                                              <div class="form-check">
+                                                  <input type="checkbox" class="form-check-input" id="check-trans3" name="radio">
+                                                  <label class="form-check-label" for="check-trans3">Afghanistan</label>
+                                              </div>
+                                              <div class="form-check">
+                                                  <input type="checkbox" class="form-check-input" id="check-trans3" name="radio">
+                                                  <label class="form-check-label" for="check-trans3">Afghanistan</label>
+                                              </div>
+                                              <div class="form-check">
+                                                  <input type="checkbox" class="form-check-input" id="check-trans3" name="radio">
+                                                  <label class="form-check-label" for="check-trans3">Afghanistan</label>
+                                              </div>
+                                              <div class="form-check">
+                                                  <input type="checkbox" class="form-check-input" id="check-trans3" name="radio">
+                                                  <label class="form-check-label" for="check-trans3">Afghanistan</label>
+                                              </div>
+                                          </div>
+                                      </div>
+  
+  
+                           </div>
+  
+                           
+                          </div>
+                        </div>
+                      </div>
+        
+                </div>
+            </div>
+            <div class="col-xl-9 col-sm-8">
+                <div class="row mb-4 mt-1">
+                    <div class="col-sm-8 col-xl-9">
+                        <label class="text-primary my-2">"Service name" About 441 results</label>
+                    </div>
+                    <div class="col-sm-4 col-xl-3">
+                        <select class="form-select rounded-30 my-2">
+                            <option>All</option>
+                            <option>Business</option>
+                            <option>Business</option>
+                        </select>
+                    </div>
+                        
+                </div>
+        
+
+                <!--results-->
+                            <div class="row single-result mb-4">
+                                <div class="col-xl-10 col-sm-3">
+                                    <h5 class="text-lightBlue">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy</h5>
+                                    <p class="text-primary mb-0">
+                                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd…..
+                                    </p>
+                                    <div class="w-100">
+                                        <label class="mx-2 my-2 px-4 py-2 bg-gray-darker text-primary rounded-30">KEYWORD</label>
+                                        <label class="mx-2 my-2 px-4 py-2 bg-gray-darker text-primary rounded-30">KEYWORD</label>
+                                        <label class="mx-2 my-2 px-4 py-2 bg-gray-darker text-primary rounded-30">KEYWORD</label>
+                                        <label class="mx-2 my-2 px-4 py-2 bg-gray-darker text-primary rounded-30">KEYWORD</label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-9 col-xl-2">
+                                    <div class="single-result--img">
+                                        <img src="./img/project-img.jpg" class="mw-100" width="200" />
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="row single-result mb-4">
+                                <div class="col-xl-10 col-sm-3">
+                                    <h5 class="text-lightBlue">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy</h5>
+                                    <p class="text-primary mb-0">
+                                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd…..
+                                    </p>
+                                    <div class="w-100">
+                                        <label class="mx-2 my-2 px-4 py-2 bg-gray-darker text-primary rounded-30">KEYWORD</label>
+                                        <label class="mx-2 my-2 px-4 py-2 bg-gray-darker text-primary rounded-30">KEYWORD</label>
+                                        <label class="mx-2 my-2 px-4 py-2 bg-gray-darker text-primary rounded-30">KEYWORD</label>
+                                        <label class="mx-2 my-2 px-4 py-2 bg-gray-darker text-primary rounded-30">KEYWORD</label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-9 col-xl-2">
+                                    <div class="single-result--img">
+                                        <img src="./img/project-img.jpg" class="mw-100" width="200" />
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="row single-result mb-4">
+                                <div class="col-xl-10 col-sm-3">
+                                    <h5 class="text-lightBlue">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy</h5>
+                                    <p class="text-primary mb-0">
+                                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd…..
+                                    </p>
+                                    <div class="w-100">
+                                        <label class="mx-2 my-2 px-4 py-2 bg-gray-darker text-primary rounded-30">KEYWORD</label>
+                                        <label class="mx-2 my-2 px-4 py-2 bg-gray-darker text-primary rounded-30">KEYWORD</label>
+                                        <label class="mx-2 my-2 px-4 py-2 bg-gray-darker text-primary rounded-30">KEYWORD</label>
+                                        <label class="mx-2 my-2 px-4 py-2 bg-gray-darker text-primary rounded-30">KEYWORD</label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-9 col-xl-2">
+                                    <div class="single-result--img">
+                                        <img src="./img/project-img.jpg" class="mw-100" width="200" />
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="row single-result mb-4">
+                                <div class="col-xl-10 col-sm-3">
+                                    <h5 class="text-lightBlue">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy</h5>
+                                    <p class="text-primary mb-0">
+                                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd…..
+                                    </p>
+                                    <div class="w-100">
+                                        <label class="mx-2 my-2 px-4 py-2 bg-gray-darker text-primary rounded-30">KEYWORD</label>
+                                        <label class="mx-2 my-2 px-4 py-2 bg-gray-darker text-primary rounded-30">KEYWORD</label>
+                                        <label class="mx-2 my-2 px-4 py-2 bg-gray-darker text-primary rounded-30">KEYWORD</label>
+                                        <label class="mx-2 my-2 px-4 py-2 bg-gray-darker text-primary rounded-30">KEYWORD</label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-9 col-xl-2">
+                                    <div class="single-result--img">
+                                        <img src="./img/project-img.jpg" class="mw-100" width="200" />
+                                    </div>
+                                </div>
+                            </div>
+    <!-- #END# results-->
+
+                            <!--pagination-->
+                            <div class="row mb-4 align-items-center pagination-row text-sm-start text-center">
+                                <div class="col-sm-6 ">
+                                    <label class="text-primary my-3">Showing 1 to 6 of 441 results</label>
+                                </div>
+                                <div class="col-sm-6">
+                                    <nav aria-label="Page ">
+                                        <ul class="pagination pagination-custom float-sm-end my-3 d-inline-flex">
+                                          <li class="page-item">
+                                            <a class="page-link arrow disabled"  href="#" aria-label="Previous">
+                                                <i class="fa fa-angle-left"></i>
+                                            </a>
+                                          </li>
+                                          <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                          <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                                          <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                          <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                          <li class="page-item"><a class="page-link" href="#">...</a></li>
+                                          <li class="page-item">
+                                            <a class="page-link arrow" href="#" aria-label="Next">
+                                             <i class="fa fa-angle-right"></i>
+                                            </a>
+                                          </li>
+                                        </ul>
+                                      </nav>
+                                </div>
+                                    
+                            </div>
+
+            </div>
+        </div>
+    </div>
+ </section>
+
+
+
+
+</div>
+<!-- End of Main Content -->
+
+<!-- Footer -->
+<footer class="sticky-footer footer">
+    <div class="container my-auto">
+        <div class="row">
+                  
+            <div class="col-12">
+                <div class="logo-animation relative d-inline-block">
+                    <a href="#" class="d-inline-block">
+                        <img src="./img/logo-white.svg" width="132" class="mw-100 mb-3">
+                    </a>
+                    <img src="./img/footer-arrow.svg" class="arrow arrow-first">
+                    <img src="./img/footer-arrow.svg" class="arrow arrow-second">
+                    <img src="./img/footer-arrow.svg" class="arrow arrow-third">
+                </div>
+            </div>
+
+            <div class="col-6 col-xl-2 mt-4">
+                <h6 class="text-white font-bold">Company Information</h6>
+                <ul class="footer-list">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">News &amp; press releases</a></li>
+                    <li><a href="#">Our services</a></li>
+                    <li><a href="#">Terms &amp; conditions</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-xl-2 mt-4">
+                <h6 class="text-white font-bold">Help &amp; support</h6>
+                <ul class="footer-list">
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Help &amp; FAQ</a></li>
+                    <li><a href="#">Privacy policy</a></li>
+                    <li><a href="#">Cookie's policy</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-xl-2 mt-4">
+                <h6 class="text-white font-bold">Our Standards</h6>
+                <ul class="footer-list">
+                    <li><a href="#">Our Confidentially</a></li>
+                    <li><a href="#">Protection Standards</a></li>
+                    <li><a href="#">Our External Teams</a></li>
+                    
+                </ul>
+            </div>
+            <div class="col-12 col-xl-4 mt-4">
+        
+                <h6 class="text-white font-bold">Subscribe to Newsletter</h6>
+                <form class="masthead--search relative mt-4 mb-3">
+                    <input type="text" class="form-control masthead--searchInput" placeholder="Email">
+                    <button class="btn btn-yellow rounded-30 py-2" type="button">Subscribe</button>
+                </form>
+                    <div class="form-check mt-0 mx-3">
+                        <input type="checkbox" class="form-check-input" id="check1" name="check1">
+                        <label class="form-check-label" for="check1"> I Agree</label>
+                      </div>
+            </div>
+            <div class="col-xl-2 mt-4">
+                <h6 class="text-white font-bold">Download the App</h6>
+                <a href="#"><img src="./img/google-play.svg" class="mw-100 mt-3"></a>
+                <a href="#"><img src="./img/app-store.svg" class="mw-100 mt-3"></a>
+            </div>
+
+</div>
+        <div class="row">
+            <div class="col-12 mt-4 mt-sm-2">
+                <label>Language</label>
+                <div class="dropdown px-sm-3 px-2 d-inline"> <a class="d-inline-block ps-0 py-2 pe-3 text-white text-decoration-none dropdown-toggle fw-medium" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">EN</a>
+                    <ul class="dropdown-menu dropdown-menu-end border-0 shadow-lg" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#!">EN</a></li>
+                      <li><a class="dropdown-item" href="#!">AR</a></li>
+                    </ul>
+                </div>
+                <div class="d-sm-inline pt-sm-2 mt-3 mb-3 mb-sm-0 mt-xl-0 mx-sm-1">
+                    <a href="#" class="icon-yellow align-middle">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="icon-yellow align-middle mx-1">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="icon-yellow align-middle mx-1">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a  href="#" class="icon-yellow align-middle mx-1">
+                        <i class="fab fa-snapchat-ghost"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <hr class="mb-4 mb-lg-1 mt-5" />
+        <div class="copyright text-center mt-1 row  align-items-center">
+            <div class="col-sm-6 text-sm-start mb-0 mb-sm-0 mb-3">
+                <span>&copy; Powered by Max innovation</span> 
+            </div>
+           
+           <div class="col-sm-6 text-sm-end">
+                <span>&copy; Website 2022 • Created by</span> <a href="#" width="150" target="_blank"><img src="./img/logo-company.jpg" /></a>
+           </div>
+
+        </div>
+    </div>
+</footer>
+<!-- End of Footer -->
+
+</div>
+<!-- End of Content Wrapper -->
+
+
+</div>
+<!-- End of Page Wrapper -->
+
+<!-- Scroll to Top Button-->
+<a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+</a>
+
+<!-- Logout Modal-->
+<div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                <a class="btn btn-primary" href="login.html">Logout</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap core JavaScript-->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Core plugin JavaScript-->
+<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+<script src="vendor/select2/select2.min.js"></script>
+<script src="vendor/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+
+<!--Swiper JS-->
+<script src="vendor/swiper/swiper-bundle.min.js"></script>
+
+
+<!-- Page level plugins -->
+
+<script src="vendor/chart.js/Chart.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.0.0/chartjs-plugin-datalabels.min.js" integrity="sha512-R/QOHLpV1Ggq22vfDAWYOaMd5RopHrJNMxi8/lJu8Oihwi4Ho4BRFeiMiCefn9rasajKjnx9/fTQ/xkWnkDACg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-piechart-outlabels@0.1.4/dist/chartjs-plugin-piechart-outlabels.min.js"></script>
+
+<!-- Custom scripts for all pages-->
+<script src="js/gs-admin.js"></script>
+
+<!--if you wish animate the charts on scroll-->
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-deferred@1"></script>
+<!-- Page level custom scripts -->
+<script src="js/map.js"></script>
+<script src="js/demo/file-upload.js"></script>
+<!--<script src="js/demo/chart-area-demo.js"></script>-->
+<script src="js/demo/chart-pie-demo.js"></script>
+<script src="js/demo/chart-lines-demo.js"></script>
+<script src="js/demo/chart-bar-demo.js"></script>
+
+</body>
+
+</html>

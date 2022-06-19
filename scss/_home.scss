@@ -35,6 +35,11 @@
    
   }
 
+  &--small{
+    padding-top: 6.5rem;
+    padding-bottom:3rem;
+  }
+
   
 
   @media (min-width: 1200px){
@@ -78,7 +83,7 @@
 
 .autocomplete-box{
   position: absolute;
-
+z-index: 3;
   background-color: #fff;
   width: 100%;
   border-radius: 0 0 30px 30px;

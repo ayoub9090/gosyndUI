@@ -153,3 +153,17 @@ input[type='checkbox'] + label, input[type='radio'] + label{
     float:left;
 }
 /************#END# HOME RTL*****************/
+
+
+.form-check{
+    padding-right: 1.5em;
+}
+
+.pagination-custom .page-item .page-link.arrow{
+    transform: scaleX(-1);
+}
+
+.masthead--search .fa-times{
+    right:auto;
+    left:114px;
+}
