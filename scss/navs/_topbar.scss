@@ -245,3 +245,16 @@ border-color: #fff;
     min-width: 250px;
   }
 }
+
+.nav-default{
+  .nav-link{
+    color:#61656E;
+  }
+  .nav-link.active{
+    color:#315E8A;
+    font-weight: bold;
+    border:0;
+    border-bottom: 2px solid #315E8A;
+
+  }
+}
