@@ -163,6 +163,7 @@
       top:0;
       right:0;
       content:'';
+      transition: all 0.3s;
       background-size: contain;
       background-image: url(../img/mask-right.svg);
       background-repeat: no-repeat;

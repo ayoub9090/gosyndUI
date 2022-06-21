@@ -289,3 +289,16 @@ function toggleMap(area) {
 
   $('path.' + area).addClass('activeArea');
 }
+
+
+function toggleView() {
+  if ($('.tenders-boxes--table').length > 0) {
+    $('.togglerView .grid-sort').fadeIn(200);
+    $('.togglerView .table-icon').fadeOut(200);
+    $('.tenders-boxes').removeClass('tenders-boxes--table');
+  } else {
+    $('.togglerView .grid-sort').fadeOut(200);
+    $('.togglerView .table-icon').fadeIn(200);
+    $('.tenders-boxes').addClass('tenders-boxes--table');
+  }
+}

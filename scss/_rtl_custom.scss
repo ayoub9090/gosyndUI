@@ -167,3 +167,32 @@ input[type='checkbox'] + label, input[type='radio'] + label{
     right:auto;
     left:114px;
 }
+
+.tenders-boxes--table .tenders-boxes-box{
+    padding-right: 30px !important;
+    padding-left: 0.5rem !important;
+}
+.tenders-boxes--table .tenders-count{
+    left:auto;
+    right:16px;
+}
+
+.tender-box--document {
+    border-radius: 0px 0 15px 0;
+}
+
+.back-link{
+    i{
+    transform: scaleX(-1);
+    }
+}
+
+a:hover {
+    color: #274b6e;
+}
+
+.main-nav:before{
+    transform: scaleX(-1);
+    right:auto;
+    left:0;
+}
