@@ -196,3 +196,54 @@ a:hover {
     right:auto;
     left:0;
 }
+
+.mask-right:before{
+    right:auto;
+    left:0;
+    transform: none;
+}
+
+.stroke-title-yellow:before{
+    left:auto;
+    right:0;
+}
+
+.stroke-title-yellow--sm:before{
+    right: -1.5rem;
+    left: auto;
+}
+
+@media(min-width:992px){
+    .white-stiky-box{
+        left:auto;
+        right:0;
+    }
+    .ml-n5{
+        margin-left: auto;
+        margin-right: -14rem;
+    }
+    .mr-n4{
+        margin-left:-10rem;
+        margin-right:auto;
+    }
+}
+
+
+.px-custom-5{
+    @media(min-width:767px){
+      padding-right:4rem !important;
+      padding-left: 0 !important;
+    }
+  }
+  .px-custom-10{
+    @media(min-width:767px){
+      padding-right:10rem !important;
+      padding-left: 0 !important;
+    }
+  }
+  .dots-square-mask:before{
+    @media(min-width:767px){
+      right:0; 
+      left:auto;
+    }
+  }
