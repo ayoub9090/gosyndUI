@@ -712,7 +712,11 @@ hr.strength-hr{
   }
   
 }
-
+.accordion-transparent{
+  .accordion-item{
+    background-color: transparent;
+  }
+}
 .checkbox-list{
   max-height: 240px;
   .form-check{
@@ -1105,4 +1109,51 @@ overflow: hidden;
   @media(min-width:767px){
     padding-left:12rem !important;
   }
+}
+
+.accordion-plus{
+      .accordion-collapse {
+        border: 0;
+    }
+    
+    .accordion-button{
+      padding-bottom: 0.8rem;
+      padding-top: 0.8rem;
+    }
+
+    .accordion-button:focus {
+        box-shadow: none;
+        border: none;
+    }
+
+    .accordion-item{
+      border:0;
+    }
+
+    .accordion-button::after {
+      width: 32px;
+      height: 32px;
+      content: "+";
+      font-size: 24px;
+      font-weight: bold;
+      background-image: none;
+      font-weight: 100;
+      color: #D3D3D3;
+      -webkit-transform: translateY(-4px);
+      -ms-transform: translateY(-4px);
+      transform: translateY(-4px);
+      border: 2px solid #D3D3D3;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .accordion-button:not(.collapsed)::after {
+        content: "-";
+        font-size: 30px;
+        transform: translate(-5px, -4px);
+        transform: rotate(0deg);
+    }
+
+
 }

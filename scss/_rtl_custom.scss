@@ -247,3 +247,8 @@ a:hover {
       left:auto;
     }
   }
+
+
+  .accordion-plus .accordion-button::after{
+    padding-bottom: 5px;
+  }
